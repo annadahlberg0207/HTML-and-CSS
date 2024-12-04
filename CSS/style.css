@@ -56,7 +56,6 @@ p {
   display: block;
   font-size: 4rem;
   width: 800px;
-  position: left;
 }
 
 #introtext {
@@ -67,8 +66,6 @@ p {
   display: block;
   font-size: 1.3rem;
   width: 800px;
-  position: left;
-
 }
 
 .projectBlock {
@@ -77,7 +74,7 @@ p {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
 
 * {
@@ -138,7 +135,7 @@ td {
   border-radius: 15px;
   white-space: nowrap;
   padding: 15px 30px;
-  transition-duration: 0.5s ease-in-out;
+  transition-duration: 0.5s;
 
 }
 
@@ -177,7 +174,7 @@ footer {
   display: flex;
   gap: 20px;
   padding: 10px;
-  
+
 }
 
 .socialmediaicons a {
@@ -187,7 +184,7 @@ footer {
 
 .socialmediaicons img {
   width: 40px;
-  height: 40px;  
+  height: 40px;
 }
 
 .socialmediaicons img:hover {
@@ -202,7 +199,7 @@ footer {
   padding-top: 40px;
 }
 
-#textfooter{
+#textfooter {
   text-align: center;
   padding-bottom: 40px;
 }
@@ -397,7 +394,7 @@ textarea {
 
 
 
- 
+
 .navigering {
   display: flex;
   justify-content: space-between;
@@ -417,8 +414,8 @@ textarea {
 }
 
 .navigering a:hover {
-    background-color: #ffde9b;
-    border-radius: 7px;
+  background-color: #ffde9b;
+  border-radius: 7px;
   font-weight: 700;
 }
 
@@ -431,7 +428,7 @@ textarea {
 /* Menyn på stora skärmar */
 .menu {
   display: flex;
-  
+
 }
 
 .menu a {
@@ -483,24 +480,23 @@ textarea {
   }
 
 
-  .h2project{
+  .h2project {
     font-size: 1.1rem;
   }
 
   #introtext {
     margin-bottom: 70px;
     font-size: 1.1rem;
-    position: left;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
     width: auto;
   }
 
-p{
-  margin-left: 10px;
-  margin-right: 10px;
-}
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
   .projectBlock {
 
@@ -519,108 +515,112 @@ p{
     border-radius: 15px;
     white-space: nowrap;
     padding: 15px 30px;
-    transition-duration: 0.5s ease-in-out;
-margin-top: 30px;
+    transition-duration: 0.5s;
+    margin-top: 30px;
   }
 
   .project1 {
-   padding: 20px;
+    padding: 20px;
   }
-  
+
   .project2 {
     padding: 20px;
   }
 
- /* Place the timelime to the left */
- .timeline::after {
-  left: 31px;
-}
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
 
-/* Full-width containers */
-.container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-}
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
 
-/* Make sure that all arrows are pointing leftwards */
-.container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
 
-/* Make sure all circles are at the same spot */
-.left::after, .right::after {
-  left: 15px;
-}
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
 
-/* Make all right containers behave like the left ones */
-.right {
-  left: 0%;
-}
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
 
 
   /* Menyn (länkar) är gömd som standard */
   .menu {
-      display: none;
-      flex-direction: column;
-      background-color: white;
-      position: absolute;
-      top: 50px;
-      right: 0;
-      width: 100%;
-      z-index: 1;
-      margin-top: 40px;
-      box-shadow: 5px 5px 10px rgba(218, 211, 201);
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    margin-top: 40px;
+    box-shadow: 5px 5px 10px rgba(218, 211, 201);
   }
 
   /* När checkboxen är markerad, visa menyn */
-  .menu-toggle:checked + .hamburger + .menu {
-      display: flex;
+  .menu-toggle:checked+.hamburger+.menu {
+    display: flex;
   }
 
   /* Länkarna i menyn på små skärmar */
   .menu a {
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid #444;
-      height: 60px;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    height: 60px;
   }
 
   .form {
     padding-left: 20px;
     padding-right: 20px;
   }
- 
+
 
   /* Hamburgermeny syns på små skärmar */
   .hamburger {
-      display: block;
+    display: block;
   }
-  
+
 
 
   .footertable {
     display: flex;
-    flex-direction: column; /* Stapla innehållet vertikalt lägg till kunna hovra och få fram pekande hand*/
+    flex-direction: column;
+    /* Stapla innehållet vertikalt lägg till kunna hovra och få fram pekande hand*/
     align-items: center;
-    
+
   }
 
-  .cell{
-    display: block; /* Varje cell blir en rad */
-        width: 100%; /* Full bredd för varje cell */
-        padding: 10px;
-        text-align: center; 
-        cursor: pointer;
-        
+  .cell {
+    display: block;
+    /* Varje cell blir en rad */
+    width: 100%;
+    /* Full bredd för varje cell */
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+
   }
 
-  .socialmediaicons{
+  .socialmediaicons {
     display: flex;
-   justify-content: center;
+    justify-content: center;
   }
 
 
