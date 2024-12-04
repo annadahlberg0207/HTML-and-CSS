@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Portfolio - Anna Dahlberg</title>
+    <link rel="icon" href="img/brush for icon - kopia.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+    <nav class="navigering">
+        <a href="index.html" class="logo"><img src="img/logotyp.png" alt="Logotype for Anna Dahlberg"></a>
+        <!-- Checkbox för att hantera hamburgermenyn -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <!-- Label som fungerar som hamburgermeny -->
+        <label for="menu-toggle" class="hamburger"><img src="img/hamburger.png" alt="A hamburgericon"></label>
+        
+        <!-- Menyn -->
+        <div class="menu">
+            <a href="aboutme.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <h1 id="intro">Are you interested in connecting?</h1>
+    <p id="introtext">Write me a message and you will hear from me shortly.</p>
+
+    <div class="form">
+        <form>
+            <div class="textfield">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Your name" required>
+            </div>
+
+            <div class="mailfield">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Your e-mail" required>
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" rows="10" cols="50" placeholder="Write your message here" required></textarea>
+            </div>
+
+            <button type="submit" class="button1">Send</button>
+        </form>
+    </div>
+
+    </body>
+    <footer class="footer">
+
+        <table class="footertable">
+            <tr>
+                <td class="cell">
+                    <p>Send me a message</p>
+                    <p>Link to form</p>
+                </td>
+                <td class="cell">
+                    <p>Integrity policy</p>
+                    <p>Terms of service</p>
+                </td>
+                <td class="cell">
+                    <p>Feel free to visit my social medias</p>
+                    <div class="socialmediaicons">
+                        <a href="https://facebook.com" target="_blank"><img src="img/facebookicon.png" alt="Logotyp Facebook">
+                        </a>
+                        <a href="https://www.pinterest.com/" target="_blank"><img src="img/pinteresticon.png" alt="Logotyp Pinterest">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedinicon.png" alt="Logotyp Linkedin">
+                        </a>
+                    </div>
+                </td>
+            </tr> 
+        </table>
+            <a href="/index.html"><img src="img/logotyp.png" alt="Logotyp Anna Dahlberg" id="Logotypefooter"></a>
+            <p id="textfooter"> &copy; 2024 Anna Dahlberg. All rights reserved.</p>
+    </footer>
