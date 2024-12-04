@@ -13,12 +13,8 @@
 <body>
     <nav class="navigering">
         <a href="index.html" class="logo"><img src="img/logotyp.png" alt="Logotype for Anna Dahlberg"></a>
-        <!-- Checkbox för att hantera hamburgermenyn -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <!-- Label som fungerar som hamburgermeny -->
         <label for="menu-toggle" class="hamburger"><img src="img/hamburger.png" alt="A hamburgericon"></label>
-        
-        <!-- Menyn -->
         <div class="menu">
             <a href="aboutme.html">About Me</a>
             <a href="contact.html">Contact</a>
@@ -26,18 +22,18 @@
     </nav>
 
     <h1 id="intro">Are you interested in connecting?</h1>
-    <p id="introtext">Write me a message and you will hear from me shortly.</p>
+    <h2 id="introtext">Write me a message in this form and you will hear from me shortly.</h2>
+
 
     <div class="form">
-        <form>
+        <form action="mailto:anna.dahlberg0207@stud.hkr.se" method="post" enctype="text/plain">
             <div class="textfield">
                 <label for="name">Name</label>
-                <input type="text" placeholder="Your name" id="name" required>
+                <input type="text" placeholder="Your name" name="name" id="name" required>
             </div>
-
             <div class="mailfield">
                 <label for="email">E-mail</label>
-                <input type="email" placeholder="Your e-mail" id="email" required>
+                <input type="email" placeholder="Your e-mail" name="email" id="email" required>
             </div>
 
             <div class="field">
@@ -48,7 +44,6 @@
             <button type="submit" class="button1">Send</button>
         </form>
     </div>
-
   
     <footer class="footer">
 
