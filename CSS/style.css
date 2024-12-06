@@ -455,6 +455,15 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
 
   header {
@@ -604,3 +613,14 @@ textarea {
     justify-content: center;
   }
 }
+@media (max-width: 450px) {
+  #intro {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+ 
+  #introtext {
+    margin-bottom: 70px;
+    font-size: 1rem;
+  }
+  }
